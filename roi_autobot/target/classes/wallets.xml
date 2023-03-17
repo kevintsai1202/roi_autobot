@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wallets>
+  <rpc>https://bsc-dataseed4.ninicoin.io</rpc>
+  <wallet name="wallet1">
+    <walletAddress>0xc0C3C272f2b998F17Ad6085376663b39A72467EE</walletAddress>
+    <!-- 輸入錢包地址 -->
+    <privateKey>99220a23cde03b5fe08b1b98b5efb6bbe5902cf7a12cde330c25d9922b344529</privateKey>
+    <!-- 輸入私鑰 -->
+  </wallet>
+  <wallet name="wallet2">
+    <walletAddress>0xf9ED530453CAadC7f894C6d33FE727453DE0aCCA</walletAddress>
+    <!-- 輸入錢包地址 -->
+    <privateKey>658ebcc64bbf6ff11f7b446afe0d68f6b2636d1b45872fd87d169da2e99f0faa</privateKey>
+    <!-- 輸入私鑰 -->
+  </wallet>
+  <wallet name="wallet3">
+    <walletAddress>0xbdAb8195f54dDef30C65Ae04d0df4169E3f4Eed6</walletAddress>
+    <!-- 輸入錢包地址 -->
+    <privateKey>b38f697ff8613e0ae0de1cd3cced316be5c8d29b0467ee5e8678866fdeef4b17</privateKey>
+    <!-- 輸入私鑰 -->
+  </wallet>
+</wallets>

@@ -1,0 +1,19 @@
+<bot>
+	<sleep>200</sleep><!-- 每次交易間隔毫秒 -->
+	<duration>600</duration><!-- 總執行時間毫秒，1分鐘=60000毫秒，每500毫秒執行一次共會執行120次  -->
+	<gasBoost>3</gasBoost><!-- 建議最高3倍即可 -->
+	<approveToken>false</approveToken><!-- 若已先授權可設為false，以免重複授權浪費瓦斯費 -->
+	<wallet name="wallet1"></wallet><!-- name需為 wallet.xml中所設定的name -->
+	<roiProject name = "luckey">
+		<contractAddress>0xeC7B42e47a7F6a6ed2C8647d51eA4B95d3AEd8EC</contractAddress><!-- luckey -->
+		<batchBuyFunction name="buyLeafs" amount="0.01" type="payable" token="BNB" >
+		<!--token支援 BNB / BUSD / USDT -->
+		<!--type可填 payable / input -->
+		<!--payable函式通常為BNB -->
+		<!--input函式是非 BNB 的代幣，合約只能透過input參數輸入amount -->
+		</batchBuyFunction>
+		<checkFunction active="false" name="getBalance" >
+			<!-- 合約有餘額即停止 -->
+		</checkFunction>
+	</roiProject>
+</bot>

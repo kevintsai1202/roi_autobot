@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wallets>
+  <rpc>https://bsc-dataseed4.ninicoin.io</rpc>
+  <wallet name="wallet1">
+    <walletAddress>0xc0C3C272f2bxxxxxxxxxxxxxxxx</walletAddress>
+    <!-- 輸入錢包地址 -->
+    <privateKey>xxxxxxxxxxxxxxxxxx</privateKey>
+    <!-- 輸入私鑰 -->
+  </wallet>
+  <wallet name="wallet2">
+    <walletAddress>0xf9ED53045yyyyyyyyyyyyyyy</walletAddress>
+    <!-- 輸入錢包地址 -->
+    <privateKey>yyyyyyyyyyyyyyy</privateKey>
+    <!-- 輸入私鑰 -->
+  </wallet>
+</wallets>

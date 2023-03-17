@@ -1,0 +1,29 @@
+<bot>
+	<jobs>
+		<!-- <job>-->
+			<!-- <wallet name='wallet2'>-->
+			<!-- name需為 wallet.xml中所設定的name -->
+			<!-- </wallet>
+			<roiProjects>
+				<roiProject name="rise of mars">
+					<contractAddress>0x8CdA2005F3a34cd654E9d50156697eaB859c0df6</contractAddress>
+					<compoundFunction name="CompoundRewards" firstTime="2022-08-15 15:00:00" period="24" currTimes="3" totalTimes="5">
+						<sellFunction name = "SellLands" period="36"></sellFunction>
+					</compoundFunction>
+				</roiProject>
+			</roiProjects>
+		</job> -->
+		<job>
+			<wallet name='wallet1'><!-- name需為 wallet.xml中所設定的name -->
+			</wallet>
+			<roiProjects>
+				<roiProject name="MoneyToad">
+					<contractAddress>0xd2d28013E97161cb58bfD36643cC93a3E137ec37</contractAddress>
+					<compoundFunction name="hatchEggs" input = "address" firstTime="2022-09-03 08:00:00" period="24" currTimes="0" totalTimes="6">
+						<sellFunction name = "sellEggs" period="24"></sellFunction>
+					</compoundFunction>
+				</roiProject>
+			</roiProjects>
+		</job>
+	</jobs>
+</bot>

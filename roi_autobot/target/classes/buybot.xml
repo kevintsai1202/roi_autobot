@@ -1,0 +1,21 @@
+<bot>
+	<sleep>300</sleep>
+	<gasBoost>1</gasBoost><!-- 建議最高3倍即可 -->
+	<approveToken>false</approveToken><!-- 若已先授權可設為false，以免重複授權浪費瓦斯費 -->
+	<wallet name="wallet1"></wallet><!-- name需為 wallet.xml中所設定的name -->
+	<roiProject name = "CowboyBeans">
+		<contractAddress>0xcd3D0Ea8b5D82d7D5976220807c5B4BF52A5D228</contractAddress><!-- CowboyBeans -->
+		<checkFunction active="true" slot="7">
+			<!-- 檢查合約Balance，若大於 0 則開始搶購 若 Balance 超過 upperLimit 就停止搶購 單位為合約使用的代幣 -->
+			<!-- active="true"會進行偵測 -->
+			<!-- active="false"不會進行偵測，程式會直接購買 -->
+			<!-- 沒頭礦的盤可將upperLimit設高點 -->
+		</checkFunction>
+		<buyFunction name="buyEggs" amount="0.01" type="payable" token="BNB">
+		<!--token支援 BNB / BUSD / USDT -->
+		<!--type可填 payable / input -->
+		<!--payable函式通常為BNB -->
+		<!--input函式是非 BNB 的代幣，合約只能透過input參數輸入amount -->
+		</buyFunction>
+	</roiProject>
+</bot>
